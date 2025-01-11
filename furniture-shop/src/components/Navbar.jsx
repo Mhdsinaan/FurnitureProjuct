@@ -1,10 +1,18 @@
 import React from 'react'
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
+import { useNavigate1 } from 'react-router-dom';
+
+
 
 function Navbar() {
   return (
+    
+
     <div>
+      <div>
+        
+      </div>
       <div className='flex justify-between py-5 px-5 '>
         <div className='flex gap-3'>
             <h1 className='logo'>azaakki</h1>
@@ -24,6 +32,7 @@ function Navbar() {
         </div>
       </div>
     </div>
+    
   )
 }
 
