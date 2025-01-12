@@ -3,8 +3,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./Footer";
 import Home from "./components/home";
 import Registration from "./components/Registration";
-import Room from "./components/BedRoom";
+import BedRoom from "./components/BedRoom";
 import Dining from "./components/Dining";
+import Living from "./components/Living";
+import Product from "./components/Product";
 
 
 
@@ -18,20 +20,13 @@ function App() {
       <Routes>
         
         <Route path="/" element={<Home/>}/>
-      <Route path="/Registration/:id" element={<Registration/>}/>
-      <Route path="/Room" element={<Room/>}/>
-      
-      
-        
+      <Route path="/Registration" element={<Registration/>}/>
+      <Route path="/Bedroom" element={<BedRoom/>}/>
+      <Route path="/Living" element={<Living/>}/>
+      <Route path="/Dining" element={<Dining/>}/>
+      <Route path="/Product/:id" element={<Product/>}/>
       </Routes>
-      <Dining/>
-      
-      
 
-
-      
-     
-    
        <Footer /> 
       </>
   );

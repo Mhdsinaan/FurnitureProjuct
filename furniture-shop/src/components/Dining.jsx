@@ -3,6 +3,10 @@ import dining from './dining.json';
 
 function Dining() {
   return (
+    <div>
+      
+      <br /><br /><br /><br />
+      <h1 className='text-center font-bold text-3xl'>Dining</h1>
     <div className="flex flex-wrap justify-center">
       {dining.map((item, index) => (
         <div key={index} className="max-w-sm rounded overflow-hidden shadow-lg m-4">
@@ -13,11 +17,13 @@ function Dining() {
           />
           <div className="px-6 py-4">
             <h2 className="font-bold text-xl mb-2">{item.name}</h2>
+            <h2 className="font-bold text-xl mb-2">{item.category}</h2>
             <p className="text-gray-700 text-baseline-through">${item.old_price}</p>
             <p className="text-green-600 text-xl font-semibold mt-2">{item.new_price}</p>
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 }
