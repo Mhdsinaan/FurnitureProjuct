@@ -1,0 +1,87 @@
+[
+{
+    "id": "1",
+    "name": "Extendable Dining Table",
+    "category": "dining",
+    "image": "https://i.pinimg.com/564x/e6/33/c0/e633c0a5b1b69102d77ebac5af5f46c9.jpg",
+    "new_price": 800,
+    "old_price": 2000,
+    "description": "An extendable wood dining table that adapts to your dining needs.",
+    "rating": 4.6,
+    "reviews": 22,
+    "topTrends": false,
+    "newCollections": true,
+    "detailOne": "This Extendable wood dining table features an extendable design, allowing you to accommodate extra guests or create more space for serving food. Crafted from solid wood, it offers durability and a classic look that complements any dining room decor."
+  },
+  {
+    "id": "4",
+    "name": "Simple Rustic Wooden Dining Bench",
+    "category": "dining",
+    "image": "https://img.freepik.com/free-photo/high-angle-dining-table-background-zoom-calls_23-2149684457.jpg?t=st=1722847801~exp=1722851401~hmac=5380384229ad3b08e7653f1238c8b6a91f8e41fd80e5f98d9cdb3671fae6ed7a&w=740",
+    "new_price": 300,
+    "old_price": 400,
+    "description": "A rustic wooden dining bench for added seating.",
+    "rating": 4.4,
+    "reviews": 15,
+    "topTrends": false,
+    "newCollections": false,
+    "detailOne": "This Simple Rustic Wooden Dining Bench features an extendable design, allowing you to accommodate extra guests or create more space for serving food. Crafted from solid wood, it offers durability and a classic look that complements any dining room decor."
+  },
+  {
+    "id": "6",
+    "name": "wood Upholstered Dining Armchair",
+    "category": "dining",
+    "image": "https://img.freepik.com/free-photo/colorful-shot-modern-light-blue-sofa-white-wooden-table_181624-27906.jpg?t=st=1722847914~exp=1722851514~hmac=aab5ccdd79f3af3a537c862bcd0c5506b990e7ce48d6c856d6b13d5e281888fc&w=360",
+    "new_price": 180,
+    "old_price": 300,
+    "description": "A luxurious wood upholstered dining armchair.",
+    "rating": 4.7,
+    "reviews": 20,
+    "topTrends": false,
+    "newCollections": false,
+    "detailOne": "This wood Upholstered Dining Armchair features an extendable design, allowing you to accommodate extra guests or create more space for serving food. Crafted from solid wood, it offers durability and a classic look that complements any dining room decor."
+  },
+  {
+    "id": "7",
+    "name": " Marble Dining Table ",
+    "category": "dining",
+    "image": "https://img.freepik.com/free-photo/table-chair_74190-2400.jpg?t=st=1722848079~exp=1722851679~hmac=7fafabbe573573f6eda82d579a9c374f60d9ed15cb62ea3df777f1053c3d6dfa&w=740",
+    "new_price": 1600,
+    "old_price": 2500,
+    "description": "A round marble dining table for sophisticated dining.",
+    "rating": 4.9,
+    "reviews": 35,
+    "topTrends": false,
+    "newCollections": false,
+    "detailOne": "New Round Marble Dining Table features an extendable design, allowing you to accommodate extra guests or create more space for serving food. Crafted from solid wood, it offers durability and a classic look that complements any dining room decor."
+  },
+  {
+    "id": "8",
+    "name": " Wood Dining Table",
+    "category": "dining",
+    "image": "https://i.pinimg.com/564x/04/34/04/043404da172cc93d74de1a1eda52cdae.jpg",
+    "new_price": "800",
+    "old_price": "2000",
+    "description": "An extendable wood dining table that adapts to your dining needs.",
+    "rating": 4.6,
+    "reviews": 22,
+    "topTrends": true,
+    "newCollections": false,
+    "detailOne": "This versatile dining table features an extendable design, allowing you to accommodate extra guests or create more space for serving food. Crafted from solid wood, it offers durability and a classic look that complements any dining room decor."
+  },
+ 
+  {
+    "id": "13",
+    "name": "Marble Coffee Table",
+    "category": "dining",
+    "image": "https://img.freepik.com/free-photo/morning-cup-coffee-white-table_23-2148251658.jpg?t=st=1719940286~exp=1719943886~hmac=49e3d2a5f78082bf2f655f06b50fd13e36492abc188b131108916f719cf8bbfe&w=740",
+    "new_price": 950,
+    "old_price": 1200,
+    "description": "A sophisticated marble top coffee table for elegant living rooms.",
+    "rating": 4.6,
+    "reviews": 24,
+    "topTrends": true,
+    "newCollections": false,
+    "detailOne": "Enhance your living room with this sophisticated marble top coffee table. The genuine marble surface exudes elegance and luxury, creating a focal point in your decor. Its sturdy base ensures stability while adding a contemporary touch to your interior."
+  }
+]

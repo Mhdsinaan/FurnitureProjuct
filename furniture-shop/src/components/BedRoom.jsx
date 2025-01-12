@@ -1,7 +1,7 @@
 import React from 'react';
 import roomData from './roomData.json';
 
-function Room() {
+function BedRoom() {
   return (
     <div className="flex flex-wrap justify-center">
       {
@@ -10,7 +10,7 @@ function Room() {
             <img src={data.image} alt={data.name} className="w-full h-64 object-cover" />
             <div className="px-6 py-4">
               <h2 className="font-bold text-xl mb-2">{data.name}</h2>
-              <p className="text-gray-700 text-base">{data.category}</p>
+              <p className="text-gray-700 text-baseline-through">${data.old_price}</p>
               <p className="text-green-600 text-xl font-semibold mt-2">{data.new_price}</p>
             </div>
           </div>
@@ -20,4 +20,4 @@ function Room() {
   );
 }
 
-export default Room;
+export default BedRoom;
