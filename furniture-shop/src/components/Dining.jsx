@@ -1,29 +1,30 @@
-import React from 'react';
-import dining from './dining.json';
+import React, { useContext, useEffect, useState } from 'react';
+import { MyContext } from './DataContext';
 
 function Dining() {
+  const { post } = useContext(MyContext);
+  const [dining, setDining] = useState([]);
+
+  // Filter the dining items when `post` changes
+  useEffect(() => {
+    if (post && post.length > 0) {
+      const filteredDiningItems = post.filter(item => item.category === 'dining');
+      setDining(filteredDiningItems); // Only set dining items
+    }
+  }, [post]); // Re-run when `post` data changes
+
   return (
     <div>
-      
-      <br /><br /><br /><br />
-      <h1 className='text-center font-bold text-3xl'>Dining</h1>
-    <div className="flex flex-wrap justify-center">
-      {dining.map((item, index) => (
-        <div key={index} className="max-w-sm rounded overflow-hidden shadow-lg m-4">
-          <img
-            src={item.image}
-            alt={item.name}
-            className="w-full h-64 object-cover"
-          />
-          <div className="px-6 py-4">
-            <h2 className="font-bold text-xl mb-2">{item.name}</h2>
-            <h2 className="font-bold text-xl mb-2">{item.category}</h2>
-            <p className="text-gray-700 text-baseline-through">${item.old_price}</p>
-            <p className="text-green-600 text-xl font-semibold mt-2">{item.new_price}</p>
-          </div>
-        </div>
-      ))}
-    </div>
+      <h1>Dining Products</h1>
+      <ul>
+        {dining.map((item, i) => (
+          <li key={i}>
+            <h2>{item.name}</h2>
+            <p>Price: {item.new_price}</p>
+            <img src={item.image} alt={item.name} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

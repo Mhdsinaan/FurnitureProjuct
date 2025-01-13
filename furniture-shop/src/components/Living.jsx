@@ -1,5 +1,4 @@
 import React from 'react';
-import living from './living.json';
 
 function Living() {
   return (

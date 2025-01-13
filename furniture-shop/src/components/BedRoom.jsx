@@ -1,5 +1,5 @@
 import React from 'react';
-import roomData from './roomData.json';
+
 
 function BedRoom() {
   return (
