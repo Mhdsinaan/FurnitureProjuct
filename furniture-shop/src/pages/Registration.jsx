@@ -62,7 +62,7 @@ function Registration() {
             <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
                 <h2 className="text-2xl font-bold text-gray-700 text-center mb-6">Create an Account</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
-                    {/* Username */}
+                    
                     <div>
                         <label className="block text-sm font-medium text-gray-600">Username</label>
                         <input
@@ -75,7 +75,7 @@ function Registration() {
                         />
                         {errors.username && <p className="text-sm text-red-500 mt-1">{errors.username}</p>}
                     </div>
-                    {/* Email */}
+                   
                     <div>
                         <label className="block text-sm font-medium text-gray-600">Email</label>
                         <input
@@ -88,7 +88,7 @@ function Registration() {
                         />
                         {errors.email && <p className="text-sm text-red-500 mt-1">{errors.email}</p>}
                     </div>
-                    {/* Password */}
+                
                     <div>
                         <label className="block text-sm font-medium text-gray-600">Password</label>
                         <input
@@ -101,7 +101,7 @@ function Registration() {
                         />
                         {errors.password && <p className="text-sm text-red-500 mt-1">{errors.password}</p>}
                     </div>
-                    {/* Confirm Password */}
+                  
                     <div>
                         <label className="block text-sm font-medium text-gray-600">Confirm Password</label>
                         <input
@@ -114,7 +114,7 @@ function Registration() {
                         />
                         {errors.confirmPassword && <p className="text-sm text-red-500 mt-1">{errors.confirmPassword}</p>}
                     </div>
-                    {/* Submit Button */}
+                    
                     <button
                         type="submit"
                         className="w-full bg-blue-500 text-white py-3 rounded-lg font-medium hover:bg-blue-600 transition duration-300"

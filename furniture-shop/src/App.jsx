@@ -1,35 +1,42 @@
- import { Route, Routes } from "react-router-dom";
- import Navbar from "./components/Navbar";
- import Footer from "./Footer";
- import Home from "./components/Home";
- import Registration from "./components/Registration";
- import BedRoom from "./components/BedRoom";
- import Dining from "./components/Dining";
- import Living from "./components/Living";
-import DataContext from "./components/DataContext";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home";
+import Layout from "./components/Layout";
+import Registration from "./pages/Registration";
+import Products from "./pages/Products";
+import Bedroom from "./pages/Bedroom";
 
-
-
-
+const rout = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path:"/products",
+        element: <Products />
+      }
+    ],
+  },
+  {
+    path:"/register",
+    element:<Registration />
+  },
+  {
+    path:"/Bedroom",
+    element:<Bedroom/>
+  }
+]);
 
 function App() {
   return (
     <>
-    <Navbar />
-      <Routes>
-        
-        <Route path="/" element={<Home/>}/>
-      <Route path="/Registration" element={<Registration/>}/>
-      <Route path="/Bedroom" element={<BedRoom/>}/>
-      <Route path="/Living" element={<Living/>}/>
-      <Route path="/Dining" element={<Dining/>}/>
-      <Route path="/Product/:id" element={<Product/>}/>
-      <Route path="/DataContext" element={<DataContext/>}/>
-      </Routes>
-
-       <Footer />  
       
-      </>
+        <RouterProvider router={rout} />
+      
+    </>
   );
 }
 
